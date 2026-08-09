@@ -15,4 +15,4 @@ export const mainNavItems: NavItem[] = [
 	{ title: 'Contact', href: '/contact' }
 ];
 
-export const moreNavItems: NavItem[] = [{ title: 'Resume', href: '/resume.pdf', external: true }];
+export const moreNavItems: NavItem[] = [];
