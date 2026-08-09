@@ -46,27 +46,35 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={Site.description} />
+	<meta name="application-name" content={Site.name} />
 
 	<!-- Open Graph (OG) Tags -->
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={Site.description} />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={Site.url} />
+	<meta property="og:url" content={Site.url + page.url.pathname} />
 	<meta property="og:image" content={`${Site.url}/og-image.png`} />
+	<meta property="og:image:alt" content={`${Site.seo.author} — Portfolio & Blog`} />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 	<meta property="og:site_name" content={Site.name} />
+	<meta property="og:locale" content="en_US" />
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={Site.description} />
 	<meta name="twitter:image" content={`${Site.url}/og-image.png`} />
+	<meta name="twitter:image:alt" content={`${Site.seo.author} — Portfolio & Blog`} />
 
 	<!-- Additional Meta Tags -->
 	<meta name="author" content={Site.seo.author} />
 	<meta name="keywords" content={Site.tags.join(', ')} />
 	<meta name="robots" content="index, follow" />
-	<meta name="geo.region" content="RO" />
-	<meta name="geo.placename" content={Site.seo.location.city} />
+	<meta name="geo.region" content="NL-OV" />
+	<meta name="geo.placename" content={`${Site.seo.location.city}, ${Site.seo.location.country}`} />
+	<meta name="geo.position" content="52.2215;6.8937" />
+	<meta name="ICBM" content="52.2215, 6.8937" />
 	<link rel="canonical" href={Site.url + page.url.pathname} />
 
 	{@html `<script type="application/ld+json">${jsonLd(baseJsonLd(page.url.pathname))}</script>`}

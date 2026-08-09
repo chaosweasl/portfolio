@@ -18,17 +18,34 @@
 	{#if data.metadata.tags}
 		<meta name="keywords" content={data.metadata.tags.join(', ')} />
 	{/if}
+
+	<!-- Open Graph -->
 	<meta property="og:title" content={data.metadata.title.text} />
 	<meta property="og:description" content={data.metadata.description} />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content={Site.url + '/blogs/' + data.slug} />
 	{#if data.metadata.image}
 		<meta property="og:image" content={new URL(data.metadata.image.url, Site.url).href} />
+		<meta property="og:image:alt" content={data.metadata.image.alt || data.metadata.title.text} />
 	{/if}
-	<meta property="og:type" content="article" />
+	<meta property="article:author" content={Site.seo.author} />
+	{#if data.metadata.published_at}
+		<meta property="article:published_time" content={data.metadata.published_at} />
+	{/if}
+	{#if data.metadata.updated_at}
+		<meta property="article:modified_time" content={data.metadata.updated_at} />
+	{/if}
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={data.metadata.title.text} />
 	<meta name="twitter:description" content={data.metadata.description} />
 	{#if data.metadata.image}
-		<meta name="twitter:image:src" content={new URL(data.metadata.image.url, Site.url).href} />
+		<meta name="twitter:image" content={new URL(data.metadata.image.url, Site.url).href} />
+		<meta name="twitter:image:alt" content={data.metadata.image.alt || data.metadata.title.text} />
 	{/if}
+
+	<link rel="canonical" href={Site.url + '/blogs/' + data.slug} />
 	{@html `<script type="application/ld+json">${jsonLd(postJsonLd(data))}</script>`}
 </svelte:head>
 

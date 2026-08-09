@@ -15,8 +15,10 @@ export async function GET() {
 	const publishedProjects = projects.filter((project) => project.metadata?.published);
 	const publishedTutorials = tutorials.filter((tutorial) => tutorial.metadata?.published_at);
 
+	const now = new Date().toISOString();
+
 	const staticPages = [
-		{ path: '', priority: '1.0', changefreq: 'weekly' },
+		{ path: '', priority: '1.0', changefreq: 'weekly', lastmod: now },
 		{ path: '/about', priority: '0.8', changefreq: 'monthly' },
 		{ path: '/blogs', priority: '0.8', changefreq: 'weekly' },
 		{ path: '/projects', priority: '0.8', changefreq: 'monthly' },
@@ -34,6 +36,7 @@ export async function GET() {
 			(page) => `
 	<url>
 		<loc>${Site.url}${page.path}</loc>
+		${page.lastmod ? `<lastmod>${page.lastmod}</lastmod>` : ''}
 		<changefreq>${page.changefreq}</changefreq>
 		<priority>${page.priority}</priority>
 	</url>`

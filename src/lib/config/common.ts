@@ -31,9 +31,13 @@ interface Site {
 const Site: Site = {
 	name: 'Daniel Iacob',
 	url: dev ? 'http://localhost:5173' : 'https://chaosweasl.com',
-	description: 'Daniel Iacob (weasl) — building software, games, and creative tools.',
+	description:
+		'Serban-Daniel Iacob (chaosweasl / weasl) — software developer, game creator, and Business & IT student. Building apps, indie horror games, and creative tools with TypeScript, React, Python, and Roblox Studio.',
 	tags: [
+		'Serban-Daniel Iacob',
 		'Daniel Iacob',
+		'Serban Daniel',
+		'chaosweasl',
 		'weasl',
 		'Software Developer',
 		'Game Developer',
@@ -47,10 +51,12 @@ const Site: Site = {
 		'Web Development',
 		'Cybersecurity',
 		'Open Source',
-		'Student Developer'
+		'Student Developer',
+		'Enschede',
+		'Netherlands'
 	],
 	seo: {
-		author: 'Daniel Iacob',
+		author: 'Serban-Daniel Iacob',
 		birthDate: '2007-07-17',
 		worksFor: {
 			name: 'Student (Business & IT)',

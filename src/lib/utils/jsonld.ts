@@ -15,6 +15,15 @@ export function jsonLd(data: JsonLd): string {
 }
 
 export function baseJsonLd(pathname: string): Graph {
+	const searchAction = {
+		'@type': 'SearchAction',
+		target: {
+			'@type': 'EntryPoint',
+			urlTemplate: `${Site.url}/search?q={search_term_string}`
+		},
+		'query-input': 'required name=search_term_string'
+	} as const;
+
 	const graph: Array<WebSite | Person | ProfilePage> = [
 		{
 			'@type': 'WebSite',
@@ -23,18 +32,20 @@ export function baseJsonLd(pathname: string): Graph {
 			name: Site.name,
 			description: Site.description,
 			inLanguage: 'en-NL',
-			publisher: { '@id': personId }
+			publisher: { '@id': personId },
+			potentialAction: searchAction as WebSite['potentialAction']
 		},
 		{
 			'@type': 'Person',
 			'@id': personId,
 			name: Site.seo.author,
-			givenName: 'Daniel',
+			givenName: 'Serban-Daniel',
 			familyName: 'Iacob',
-			alternateName: ['weasl', 'chaosweasl'],
+			alternateName: ['Daniel Iacob', 'Serban Daniel', 'chaosweasl', 'weasl'],
 			url: Site.url,
 			image: siteUrl('/images/avatar.webp'),
-			description: 'Software developer and student based in Enschede, Netherlands.',
+			description:
+				'Software developer, game creator, and Business & IT student based in Enschede, Netherlands. Building apps, indie horror games, and creative tools.',
 			jobTitle: 'Software Developer',
 			birthDate: Site.seo.birthDate,
 			worksFor: {
@@ -57,7 +68,11 @@ export function baseJsonLd(pathname: string): Graph {
 				'TypeScript',
 				'Python',
 				'React',
-				'Next.js'
+				'Next.js',
+				'Lua',
+				'Roblox Studio',
+				'Competitive Programming',
+				'Robotics'
 			]
 		}
 	];
@@ -68,7 +83,8 @@ export function baseJsonLd(pathname: string): Graph {
 			'@id': `${Site.url}/#webpage`,
 			url: Site.url,
 			isPartOf: { '@id': siteId },
-			name: `About ${Site.seo.author}`,
+			name: `Serban-Daniel Iacob — Portfolio & Blog`,
+			description: Site.description,
 			inLanguage: 'en-NL',
 			mainEntity: { '@id': personId }
 		});
