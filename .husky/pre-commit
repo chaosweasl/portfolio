@@ -1,0 +1,7 @@
+# .husky/pre-commit
+
+# Sanitize EXIF (fuzz GPS to city-level precision) on staged JPEGs
+bun run scripts/sanitize-exif.ts --staged
+
+bun x prettier --write --ignore-unknown $(git diff --cached --name-only --diff-filter=ACMR)
+git update-index --again

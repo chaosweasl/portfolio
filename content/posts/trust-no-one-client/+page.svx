@@ -1,0 +1,36 @@
+~~~
+title = { text = "How I Learned the Basics of Cybersecurity" }
+description = "How building multiplayer games, securing databases, and beating anti-bot protections accidentally taught me the fundamentals of cybersecurity."
+published_at = "2026-06-15"
+tags = ["cybersecurity", "client-server", "supabase", "playwright", "web-scraping"]
+~~~
+
+# Trust No One (Especially the Client): Learning Security by Building
+
+**Client-Server Architecture, Database Auth, and Anti-Bot Evasion**
+
+I don't have a background in traditional cybersecurity (at least, not that big). I don't spend my weekends doing Capture The Flag (CTF) hacking challenges, and I'm not a penetration tester. But the more software I build, the more I realize that you can't be a good developer without being a security-minded developer.
+
+Here is how building practical projects accidentally taught me the fundamentals of cybersecurity.
+
+## I. Defensive Dev: The Multiplayer Nightmare
+
+My first real introduction to security concepts came from game development. When you are building a multiplayer environment, you quickly learn the golden rule of networking: _Never trust the client._
+
+If you let the client decide where a player is standing or how much damage they deal, your game will be destroyed by exploiters in five minutes. Figuring out how to properly split logic—letting the client handle smooth animations while forcing the server to securely validate every single action—was a massive headache, but it taught me the core principles of data validation and secure architecture.
+
+## II. Securing the Database
+
+When I built my first full-stack application that required a real database, the stakes got a lot higher. I wasn't just moving 3D models around anymore; I was handling user authentication and data logic.
+
+Using tools like Supabase forced me to actually understand how easily databases can get compromised if you aren't careful. I had to learn how to write proper security policies to ensure that a user could only ever read and write their own specific data, and how easily a tiny oversight can leave an entire backend vulnerable.
+
+## III. Offensive Dev: Beating the Bots
+
+On the flip side, building my automated housing scraper taught me how security works from the outside looking in.
+
+Modern rental websites use aggressive anti-bot protections. To build a scraper that actually worked, I had to learn how those defenses operate—how they track user agents, monitor execution speed, and flag suspicious IPs. By implementing stealth modes, random execution jitter, and headless browser spoofing, I essentially had to reverse-engineer their security measures just to get the data I needed. It was an incredibly fun, cat-and-mouse introduction to offensive security tactics.
+
+## IV. The Takeaway
+
+I know that code doesn't exist in a vacuum. A poorly secured app isn't just a technical failure; it's a massive business liability. I might not be a cybersecurity expert, but I've learned the hard way that if you aren't actively thinking about security while you are building a system, you are already too late.

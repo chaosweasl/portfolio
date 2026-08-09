@@ -1,0 +1,38 @@
+~~~
+title = { text = "First Databases and Hard Lessons in the AI Boom" }
+description = "My first major project taught me React, Supabase, and the SM-2 algorithm — but also taught me when to kill a project before it becomes AI slop."
+published_at = "2026-05-12"
+tags = ["react", "typescript", "supabase", "edtech", "ai", "startup-lessons"]
+~~~
+
+# Building Cognify: First Databases and Hard Lessons in the AI Boom
+
+**React, TypeScript, Supabase, EdTech**
+
+This app was a massive learning curve for me. Unfortunately, I made the grave mistake of outright deleting my repository instead of archiving it after realizing the project's flaws (lmao what an idiot), so you'll just have to take my word for it. But this post isn't here to brag about the code anyway; it's here to explain exactly what I learned from building this (albeit flawed) system, and why I ultimately decided it would be a terrible idea to continue moving forward with it as a business model.
+
+## I. The Technical Leap
+
+Technically, Cognify was a massive step forward for my skillset. I used TypeScript and React (my usual web arsenal), utilizing the humble DaisyUI to streamline the frontend components.
+
+More importantly, this was the first project where I implemented a real database. I chose Supabase, which technically meant I didn't have to sit down and actually learn SQL, but I did anyway. (wow, look at me go!) Anyway, I learned how user authentication fundamentally works, how data flows between the front and back end, and—crucially—how easily databases can become vulnerable if you aren't careful with your security policies. (which is what got me into considering cybersecurity as a crucial skill needed in my arsenal!)
+
+I was also incredibly ambitious with the backend logic. Instead of just making a standard flashcard app, I planned to implement the SM-2 algorithm (the mathematical foundation of spaced repetition tools like Anki). I wanted the app to actively track an "ease factor" for every single card, automatically scheduling reviews based on when a student was statistically most likely to forget the information.
+
+## II. The "GPT Wrapper" Problem
+
+Despite the technical progress I made, I had to be honest with myself about the app's viability. I originally had a vision to use AI to help generate the flashcards to feed into the SM-2 algorithm.
+
+The reality? There are already so, _so_ many GPT wrapper apps doing this exact thing. There is genuinely an overflow of AI slop in the app store right now, and it sucks. It takes a certain level of maturity as a developer to recognize when a market is oversaturated and to stop yourself from jumping into the pit with the rest of them. If your product's entire value proposition is just an API call to a language model, you don't have a defensible business.
+
+In a world like this, only the best survive, while the rest end up in the GitHub repo graveyard. Mine fortunately was spared from an eternity in GitHell since I deleted it (...GitHub Hell? Landfill? nevermind...)
+
+## III. The Distribution Trap
+
+Even if I ignored the AI aspect, the business model was doomed by existing giants. Platforms like Quizlet, Anki (which I personally hate, but I cannot stay oblivious to its influence), and newer tools like Turbolearn already do what my app aimed to do, and they do it infinitely better.
+
+In the software world, having a slightly better UI or a slightly smoother workflow isn't enough to overcome "distribution lock-in". Those established apps already have the user base, the network effects of students sharing decks, and the market share. Getting an audience for a completely new, solo-developed app in that specific niche would have been near impossible.
+
+## IV. The Takeaway
+
+Cognify failed as a product, but succeeded as a bootcamp. It taught me database management, secure authentication, and the logic of spaced repetition. More importantly, it taught me how to evaluate a project not just by the code, but by its actual viability in the real world. Also, now that I'm reflecting on this, it just might be the reason I chose Business & IT as my Bachelor's.

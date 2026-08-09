@@ -1,0 +1,43 @@
+~~~
+title = "Interva"
+description = "A sleek, fully customizable, open-source Pomodoro timer built as a lightweight desktop application with Tauri, React, and TypeScript."
+date = "2026-02-01"
+published = true
+featured = true
+tags = ["react", "typescript", "tauri", "rust", "tailwind", "daisyui", "desktop"]
+links = [
+  { text = "GitHub", url = "https://github.com/chaosweasl/interva", icon = "github" },
+]
+~~~
+
+# Interva
+
+A modern, open-source Pomodoro timer built for students and developers who need a clean, distraction-free focus tool.
+
+## What It Does
+
+Interva is a desktop Pomodoro timer application that helps you stay focused with customizable work/break intervals. Built with Tauri for a lightweight native experience, it's available on Windows, macOS, and Linux.
+
+## Technical Highlights
+
+- **Desktop Framework**: Tauri (Rust backend) keeps the app lightweight — no bloated Electron runtime
+- **Frontend**: React + TypeScript + Tailwind + DaisyUI for a polished, responsive UI
+- **35+ Themes**: Fully customizable color schemes with smooth transitions
+- **CI/CD Pipeline**: GitHub Actions automatically builds `.msi`, `.dmg`, and `.AppImage` on every version tag
+- **Landing Page**: Next.js + ShadCN + Vercel for the marketing site
+
+## What I Learned
+
+This was my first real dive into desktop app distribution. Dealing with unsigned binaries, Windows Defender false positives, and macOS Gatekeeper was a crash course in the realities of shipping software to real users. Setting up automated cross-platform builds with GitHub Actions taught me CI/CD fundamentals that I now use on every project.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery images={[
+  { src: '/projects-blog/interva/interva.webp', alt: 'Interva main timer interface' },
+  { src: '/projects-blog/interva/intervasettings.webp', alt: 'Interva settings panel' },
+  { src: '/projects-blog/interva/intervathemes.webp', alt: 'Interva theme customization' }
+]} />

@@ -1,0 +1,67 @@
+~~~
+title = { text = "I Build Roblox Games" }
+description = "How I went from building competitions in Roblox Studio at age 12 to developing an indie horror game with secure networking, custom animations, and a non-technical co-dev."
+published_at = "2026-07-01"
+tags = ["roblox-studio", "lua", "game-dev", "horror", "client-server", "collaboration"]
+~~~
+
+# From Plastic Blocks to Client-Server Architecture
+
+**Roblox Studio, Lua, Horror, Co-op Dev**
+
+## I. The Spark (Inspiration & Origins)
+
+Honestly, I'm not exactly sure what made me want to start developing games. For me, it's always been about creating. I truly live for creation; it might just be the thing that brings me perpetual joy in life—giving life to something that I envision.
+
+When I was younger, I asked a lot of questions. WAY too many questions. I was a very curious child, and I still am! I'm always curious about how certain things work and why they are the way they are. This same curiosity is what got me into game development, as well as all my other hobbies.
+
+I suppose the spark was a mix between being incredibly ambitious and being inspired by indie developers who managed to achieve what I aspired to do. I had a friend at that time who wasn't as much into making games, but she was heavy into building with the F3X Building Tools plugin. There was this group on Roblox that basically organized building competitions: you'd get a certain theme, and you'd have to do your best to match it. I learned a lot from my friend, and I honestly owe a lot to her for that, because I got pretty good at it. I definitely wasn't a pro, but because of all the practice I put in, I became capable of making just about any build I wanted.
+
+Making models was definitely the starting block. After that, I wanted to do more. I wanted to learn the core logic behind games: programming. My worst nightmare at the time.
+
+I fell into this trap that I still fall into sometimes today: the idea that there is only one "true, right way" to program. Because of that, I was never able to get out of programming hell. I was always trying to follow the programming styles of multiple people, unaware that I wasn't actually learning anything, just regurgitating the information they were giving me. I was studying patterns, not developing the essential critical thinking required to actually _program_, not just _code_ (I hope that makes sense). I was still able to do simple stuff, like programming doors to open or a simple light switch, but I never did much else past that point. To be fair, I was only 12 or 13.
+
+I think I gave up because of how big my ambitions were. I never wanted to make a simple game; I always wanted to work on something bigger. Not necessarily by myself—that was never my goal—but something beautiful, creative, and objectively fun. That barrier is exactly why I stopped developing at the time.
+
+_(Important note: the friend I am about to mention is a different friend!)_
+
+Anyway, as I got older, learned more about the world, and acquired proper programming skills, my drive returned because my ambitions were no longer out of reach. The funny thing is, what truly got me back into making games was a half-joke making fun of the crappy Roblox games my friend and I were playing. We're both suckers for indie horror games, no matter how garbage they are. We have fun playing them regardless of the quality—if it's predictable, it turns into funny moments; if it's actually scary, it also turns into funny moments. I specifically remember saying, "We could make something like this in two weeks if we really wanted to."
+
+That was the starting point of our current project. My friend and I decided to split our tasks. Not exactly equally, but compromises are required when working with non-technical people. My friend handles animations (which I then tweak and improve), some of the building, and the lore. I work on the bulk of the building, the atmosphere (lighting, immersiveness, etc.), and the gameplay loop (actually, like, all the code).
+
+## II. The Grind (Technical Struggles & Triumphs)
+
+I think one of my biggest struggles is figuring out how to actually connect animations with code. Actually, animations in general were a nightmare. Even with an RTX 4060 keeping Studio running incredibly smoothly on my end, wrestling with the timeline and quirks of Moon Animator was a massive headache.
+
+Animating walking or running itself isn't that hard, but for this game in particular, I had to add a physical chair object to the animation. Figuring out how to animate the rig _with_ the chair while making sure the live player properly interacts with the actual chair model in the game was a living nightmare. I finally got it to work.
+
+Here's what I did: Instead of trying to force the client animation to perfectly align with a static world object, I used Motor6D joints to temporarily weld the character to the chair's root part on the server side right as the animation triggers. By faking the chair's movement locally while securing the player's actual position on the server, I avoided that janky desync where the player floats away from the prop. Figuring out that boundary between what the client should see immediately for smoothness versus what the server needs to verify for security was a massive breakthrough for me.
+
+## III. The Human Element (Collaboration & Management)
+
+I definitely underestimated how difficult working with a non-technical friend would be. When you are the one staring at the engine all day, you know exactly what is feasible and what will instantly break the game's logic. Translating those technical limitations to someone whose main focus is creative lore and design is a unique challenge.
+
+Sometimes, they'll pitch an incredible, complex game mechanic, and I have to be the one to say, "That sounds amazing, but replicating that logic is going to take weeks." It forces you to get creative with compromises. We've had to learn how to split tasks in a way that doesn't step on each other's toes. By isolating our workflows—they focus on the raw animation files and narrative structure, while I handle the integration, atmospheric lighting, and scripting—we manage to keep the project moving forward without bottlenecking each other.
+
+## IV. The Takeaway
+
+Through this project, I've learned how to organize my codebase and workspace significantly better. I learned to keep the physical workspace with models organized visually for human eyes, while keeping the essential models code-friendly by utilizing tags (like CollectionService) instead of relying on rigid, hard-coded paths.
+
+I've also gotten far more in tune with the physical environment of Roblox Studio itself. Instead of endlessly scrolling through lines of code when something breaks, I usually know exactly where an issue in my scripts is just by observing the behavior of the objects in the world.
+
+Moving forward, my goal is to keep working towards finishing this game. We've put way too much effort to not bring this all the way to at least a demo version! Every broken feature and flat lighting setup is just another puzzle piece. It's exhausting, but seeing the whole picture finally come together makes every late-night debugging session worth it.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery cols={3} images={[
+  { src: '/projects-blog/horror-game/screenshot-01.webp', alt: 'Game screenshot 1' },
+  { src: '/projects-blog/horror-game/screenshot-02.webp', alt: 'Game screenshot 2' },
+  { src: '/projects-blog/horror-game/screenshot-03.webp', alt: 'Game screenshot 3' },
+  { src: '/projects-blog/horror-game/screenshot-04.webp', alt: 'Game screenshot 4' },
+  { src: '/projects-blog/horror-game/screenshot-05.webp', alt: 'Game screenshot 5' },
+  { src: '/projects-blog/horror-game/screenshot-06.webp', alt: 'Game screenshot 6' }
+]} />

@@ -1,0 +1,38 @@
+~~~
+title = { text = "My First Time Touching Hardware" }
+description = "When code has to survive actual physics — my first steps into robotics, microcontrollers, and a new kind of debugging where console.log() doesn't exist."
+published_at = "2026-03-15"
+tags = ["robotics", "arduino", "cpp", "hardware", "microcontrollers", "learning"]
+~~~
+
+# Hello, Physical World: My First Time Touching Hardware
+
+**Microcontrollers, Breadboards, and Why Physics is Annoying**
+
+If you look at my other projects, they are entirely digital. Whether I am building atmospheric lighting for a horror game, writing web scrapers to hunt for student housing, or designing Pomodoro timers, the output only ever exists on a screen.
+
+Starting robotics for the first time completely flipped my understanding of how programming works. It was a massive reality check. Here is what I learned when my code actually had to move a physical object.
+
+## I. The Hardware Reality Check
+
+In pure software development, the environment is perfect. If you write x = 5, x is exactly 5.
+
+In robotics, nothing is perfect. You can write the cleanest, most perfectly optimized logic in the world, but if a single wire on your breadboard is slightly loose, or a battery is running low, or a sensor gets a weird glare from the sun, your robot is going to drive itself straight into a wall (or just sit there and do absolutely nothing).
+
+Lowkey, I have a love-hate relationship with physics because of this. I find it fascinating but honestly I feel just a bit bottlenecked to keep growing my robotics skill because I don't know enough of it!
+
+## II. A New Kind of Debugging
+
+It was incredibly frustrating at first. I was so used to trusting my code that when something failed, I automatically assumed my logic was wrong. I would spend an hour rewriting a loop, only to realize the code was fine, but a 10-cent resistor was plugged into the wrong pin.
+
+Learning to troubleshoot _hardware_—checking physical connections, understanding voltages, and accounting for friction—is a completely different skill than reading a console error in an IDE. There is no console.log() for a dead motor.
+
+## III. The Spark of Life
+
+Despite the frustration, the payoff is completely unique. Making a 3D model move in a game engine is cool, but writing a few lines of C++ and watching a physical motor spin on your desk in the real world feels like magic. It is the moment you realize that code is just instructions, and with the right hardware, you can instruct reality.
+
+## IV. The Takeaway
+
+Learning the basics of robotics taught me patience above all else. It taught me that software has to survive the messiness of the physical world. Understanding how a sensor reads physical data and sends it to a processor gives you a massive appreciation for how modern technology actually works beneath the surface.
+
+And more importantly, learning these foundational hardware skills set the stage for an even bigger adventure later on... _(Read my Spain Devlog here!)_

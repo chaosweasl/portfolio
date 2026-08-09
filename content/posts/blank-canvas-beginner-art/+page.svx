@@ -1,0 +1,38 @@
+~~~
+title = { text = "Why Being a Beginner Again is the Best Thing for You" }
+description = "Picking up digital art on a tablet taught me more about learning, failure, and the danger of the comfort zone than any programming project ever did."
+published_at = "2026-05-28"
+tags = ["digital-art", "gopaint", "learning", "creative-process", "stylized-art"]
+~~~
+
+# The Blank Canvas: Why Being a Beginner Again is the Best Thing for You
+
+**Digital Art, GoPaint, Stylized Characters, and Embracing the Suck**
+
+If you look at the rest of my portfolio, you'll see a lot of logic. Codebases, databases, server-client architecture. But there is another side to creation that I am heavily invested in, and it's one where I am still very much a beginner: digital art.
+
+When I first picked up my tablet and booted up GoPaint, I had these massive visions of the stylized character art I wanted to create. I (VERY) quickly realized that visualizing art and actually rendering it are two completely different skill sets. Here is what this journey is teaching me about learning, failure, and the danger of the "comfort zone."
+
+Now, don't get me wrong. I am not a total beginner at drawing. One random day in 9th grade, I decided to wake up and decide that I can draw. That's pretty much how some pretty solid starter pack art skills spawned in my brain. But drawing digitally is so much more different compared to drawing traditionally, on paper. I'll make an effort to showcase you a little bit of both! (please don't roast me too hard)
+
+## I. The Comfort Zone Trap
+
+When you are new to something, especially something visual like drawing, the instinct is to only do what makes you look good.
+
+If you figure out how to draw a face looking slightly to the left, you want to draw _only_ that face forever. If you can't draw hands, you draw characters with their hands shoved firmly in their pockets. You stick to the brushes that hide your mistakes and avoid the things that expose your lack of skill.
+
+I fell into this trap early on. I was sticking strictly to the things I was comfortable with because practicing the things I was bad at felt incredibly frustrating. It felt like I was moving backward.
+
+## II. Practicing What You Are Bad At
+
+The biggest breakthrough I've had in art hasn't been a specific brush or a software trick; it was a mindset shift. I realized that if I actually wanted to make the stylized art I envisioned, I couldn't just keep drawing the same easy things over and over. I had to learn what I didn't know.
+
+I forced myself to start practicing the exact things I wanted to avoid. I started doing structured practice. I drew hands, even when they looked like alien claws. I practiced raw anatomy and shapes, realizing that before you can successfully _stylize_ a character, you have to understand the fundamental rules of reality you are trying to bend.
+
+## III. The Logic of Creativity
+
+Interestingly, coming from a programming background actually helped once I stopped fighting the basics. I started approaching art not as this mystical talent, but as a series of solvable problems. Color theory is just a framework. Perspective is just geometry. Breaking complex figures down into simple 3D shapes felt a lot like breaking a complex software feature down into smaller, manageable functions. I think this piece of advice, as soon as I got my hands on it, it turned my sketches from trash to decent almost instantaneously.
+
+## IV. The Takeaway
+
+Being a beginner is uncomfortable, but it is deeply necessary. Forcing myself to practice what I am bad at instead of defaulting to what is easy is a lesson that translates far beyond the canvas. Whether I am staring at a blank canvas in GoPaint or a blank IDE when starting a new codebase, the process is the same: get out of your comfort zone, embrace the initial struggle, and build it from the ground up.

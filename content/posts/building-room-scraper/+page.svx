@@ -1,0 +1,59 @@
+~~~
+title = { text = "Engineering a Housing Radar to Survive the Dutch Rental Market" }
+description = "When finding student housing in the Netherlands became a full-time job, I built a multi-source scraper with Playwright, Docker, Next.js, and AI agents to automate the hunt."
+published_at = "2026-04-10"
+tags = ["typescript", "playwright", "nextjs", "docker", "sqlite", "web-scraping", "ai-agents"]
+~~~
+
+# Building Room Scraper: Engineering a Housing Radar to Survive the Dutch Rental Market
+
+**TypeScript, Playwright, Next.js, Docker, SQLite, and AI Agents**
+
+It is far, far, _FAR_ from perfect. The code is messy, the edge cases will break if a platform changes its DOM structure, and it looks like a mad scientist built it in a basement. But it was useful—that I cannot deny.
+
+This project was born out of sheer necessity and a lot of stress. Finding a student room in the Netherlands is an absolute nightmare. You spend hours constantly refreshing pages, only to find out a room was rented out the second you blinked.
+
+I genuinely struggled to find housing for uni. It gets so, so much harder aswell when all the roommates and landlords you message only want to do physical viewings, and you cannot come because you are not settled in netherlands, so this project GENUINELY saved me. I managed to find housing a month before I was supposed to settle in the netherlands.
+
+When you're trying to secure a place for university from another country, manual refreshing just doesn't cut it. Here is how this chaotic little machine came together and what building it actually taught me.
+
+## I. Scraping the Web Without Getting Banned
+
+The core engine runs on a series of TypeScript scrapers powered by Playwright, all orchestrated through Docker Compose. Scraping modern rental sites is an arms race against anti-bot protections.
+
+- I had to implement stealth modes, user-agent rotation, and random execution jitter on a 15-minute cycle to keep the scrapers from getting IP-banned instantly.
+- Some platforms like Kamernet even required automated login flows and cookie management just to see the actual listings.
+
+Getting multiple independent scrapers to quietly pull data in the background without crashing the container required learning a lot about resilient error handling.
+
+## II. The Data Pipeline & Dashboard
+
+Once the data is scraped, it needs to live somewhere. I routed all the listings into a local SQLite database using Turso/libSQL.
+
+From there, I built a real-time Next.js 14 dashboard using the App Router. Whenever a new listing dropped under a certain threshold (like under €500), the system would instantly fire a Discord webhook alert straight to my phone. No more missing out because I wasn't glued to my browser.
+
+## III. Automating the Grind (Python, Email Drafts, and AI Agents)
+
+Finding a place isn't just about seeing the listing first; it's about messaging the landlord before everyone else does. But writing a compelling, personalized email for every single listing is exhausting.
+
+To speed up outreach, I wrote a Python script (generate_emails.py) that queries the SQLite database and automatically spits out personalized Dutch and English email templates into a local folder. All I had to do was open the generated draft, drop in the contact info, and hit send.
+
+However, managing the backend logic and scripting for this pipeline was getting tedious. This project became the perfect excuse to learn how to use autonomous AI agents. I set up **Hermes** (an open-source AI agent framework by Nous Research) running locally in my terminal, connected to the **DeepSeek API** (because it was incredibly cheap and capable).
+
+I used Hermes to help me write the boilerplate code for the scrapers, debug Docker container issues, and refine the Python email generation scripts. Because Hermes maintains persistent memory and can execute code directly in the terminal, it acted as a massive force multiplier. It taught me how to effectively delegate the "grunt work" of development to an AI agent so I could focus on the overall system architecture.
+
+## IV. The Takeaway & Future Plans
+
+Room Scraper started as a desperate survival tool to secure my university housing, but it ended up being one of the most practically useful things I've ever coded. It forced me to tie together web scraping, containerization, database architecture, frontend dashboards, and cutting-edge AI agent workflows into a single, cohesive system.
+
+It's rough around the edges right now, but I hope to one day come back to this codebase, refactor it until it shines, and actually deploy it as a polished public utility (I'm looking at you, Pararius...) for other desperate students trying to find a place to live.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery images={[
+  { src: '/projects-blog/room-scraper/room-scraper-architecture.webp', alt: 'Room Scraper architecture' }
+]} />

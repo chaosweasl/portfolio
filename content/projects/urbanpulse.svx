@@ -1,0 +1,40 @@
+~~~
+title = "UrbanPulse Hackathon"
+description = "A weekend hackathon project built with two semi-technical friends where the real win wasn't the code — it was the team management, mentoring, and surviving the chaos together."
+date = "2026-01-28"
+published = true
+featured = false
+tags = ["hackathon", "web-dev", "html", "css", "javascript", "teamwork"]
+links = [
+  { text = "GitHub", url = "https://github.com/chaosweasl/urbanpulse-hackathon", icon = "github" },
+  { text = "Dev Blog", url = "/blogs/urbanpulse-hackathon-vibes", icon = "docs" },
+]
+~~~
+
+# UrbanPulse Hackathon (FIICode)
+
+Not every project needs to be a technical grind. Sometimes, you just want to do a side quest.
+
+## What We Built
+
+Entered the UrbanPulse hackathon with two friends who were semi-technical at best. The objective wasn't to write the cleanest code — it was to build something together, have fun, and survive the weekend.
+
+## Technical Highlights
+
+- Standard web stack: HTML, CSS, JavaScript — nothing fancy, just duct tape and caffeine
+- Task delegation: Split work so everyone could contribute without getting overwhelmed
+- Live debugging: Spent more time explaining web concepts and fixing teammates' CSS than writing my own logic
+
+## What I Learned
+
+This hackathon was 0% about technical growth and 100% about soft skills. Teaching beginners how web components work, keeping morale up when things broke, and maintaining patience when a teammate deleted a div and destroyed the layout — these are real project management skills. The code is forgettable, but the experience of leading a team through chaos was invaluable. Sometimes a side quest is exactly what you need.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery images={[
+  { src: '/projects-blog/urbanpulse/urbanpulse.webp', alt: 'UrbanPulse hackathon project' }
+]} />

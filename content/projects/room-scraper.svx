@@ -1,0 +1,41 @@
+~~~
+title = "Room Scraper"
+description = "A multi-source housing scraper that monitors Dutch rental platforms, centralizes listings into a SQLite database, and provides real-time Discord alerts."
+date = "2026-01-15"
+published = true
+featured = true
+tags = ["typescript", "playwright", "nextjs", "docker", "sqlite", "python", "web-scraping"]
+links = [
+  { text = "GitHub", url = "https://github.com/chaosweasl/room-scraper", icon = "github" },
+]
+~~~
+
+# Room Scraper
+
+When finding student housing in the Netherlands became a full-time job, I automated the entire hunt.
+
+## What It Does
+
+Room Scraper runs multiple Playwright-based scrapers every 15 minutes across Dutch rental platforms (Roomspot, Marktplaats, Pararius, Xior, Kamernet), centralizes listings into SQLite, and fires Discord webhook alerts when new affordable rooms appear. A Python script generates personalized email drafts for rapid landlord outreach.
+
+## Technical Highlights
+
+- **Stealth Scraping**: Playwright with user-agent rotation, random execution jitter, and anti-detection configs to avoid IP bans
+- **Data Pipeline**: All listings routed through Turso/libSQL into a local SQLite database
+- **Real-time Dashboard**: Next.js 14 App Router with live listing feeds
+- **AI Agents**: Hermes (Nous Research) + DeepSeek API for boilerplate code generation and Docker debugging
+- **Infrastructure**: Docker Compose orchestrates the entire multi-service scraping loop
+
+## What I Learned
+
+This project was a masterclass in tying together disparate technologies into a cohesive system. Web scraping taught me offensive security tactics (beating anti-bot protections), Docker taught me containerization, and the AI agent integration was my first exposure to autonomous coding assistants. Most importantly, it actually solved a real problem — I found housing a month before moving to the Netherlands.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery images={[
+  { src: '/projects-blog/room-scraper/room-scraper-architecture.webp', alt: 'Room Scraper architecture overview' }
+]} />

@@ -1,0 +1,67 @@
+~~~
+title = { text = "From Local Code to Production Desktop App" }
+description = "What building a 'simple' Pomodoro timer taught me about Tauri, CI/CD pipelines, GitHub Actions, code signing, and the reality of shipping desktop software."
+published_at = "2026-04-28"
+tags = ["react", "tauri", "typescript", "ci-cd", "open-source", "desktop-app"]
+~~~
+
+# Building Interva: From Local Code to Production Desktop App
+
+**React, Tauri, CI/CD, and Open Source Workflows**
+
+At first glance, Interva is a humble app. It's a Pomodoro timer meant to help students stay focused with a clean, customizable interface. But under the hood, building this app was a massive bootcamp in real-world software engineering, deployment, and open-source collaboration.
+
+Here is what building a "simple" app actually taught me:
+
+## I. Escaping the Web Browser with Tauri
+
+Before Interva, I was primarily used to building web applications. I wanted to build a native desktop application that was lightweight and didn't consume massive amounts of RAM like standard Electron apps do.
+
+I chose Tauri, a framework that uses web technologies for the frontend but relies on Rust and the operating system's native webview for the backend. This was my first time deploying a real desktop application. I had to learn how desktop environments handle windows, system trays, and local file storage, which is a completely different paradigm than building a website.
+
+## II. UI/UX and The Importance of "Feel"
+
+I am genuinely proud of the user interface I built for this. I used React, Tailwind, and DaisyUI to create something sleek and distraction-free. I implemented over 35 customizable themes, volume controls, and smooth transitions. It taught me that making an app function correctly is only half the battle; making it _feel_ good to use is what actually keeps users engaged.
+
+## III. The Real World of GitHub (CI/CD & Versioning)
+
+This is probably the biggest takeaway from the entire project. Before Interva, my GitHub workflow was basically just git commit and git push.
+
+By open-sourcing Interva and setting it up for actual public distribution, I had to learn how real repositories function. I learned:
+
+- How branching, forking, and pull requests actually work in a collaborative environment.
+- How to write a proper CONTRIBUTING.md to guide other developers.
+- How to set up GitHub Actions to automate my release workflow. Now, when I push a new version tag, a script automatically builds the .msi, .dmg, and .AppImage files and publishes them to the releases page.
+- How to handle version flagging and automatic updates for users.
+
+Now, did I get any actual help from developers?
+...
+Moving on!
+
+## IV. The Reality of Deployment (and Unsigned Binaries)
+
+Releasing software to the public immediately introduces you to the headache of security certificates. Because I am a solo, open-source developer, I don't have the budget to buy expensive code-signing certificates for Microsoft and Apple.
+
+This meant I had to deal with Windows Defender and macOS Gatekeeper flagging the app as a potential threat simply because it was an unsigned binary. Writing the FAQ section to help users bypass these false positives taught me a lot about OS security protocols and the friction involved in independent software distribution.
+
+## V. Completing the Loop: Marketing & Vercel
+
+Building the app was only step one; I also needed a place for people to actually find and download it. This project gave me the perfect excuse to dive into Next.js and Vercel to build the official landing page.
+
+I utilized Next.js alongside ShadCN for the UI components to build a lightning-fast, responsive site. Deploying it on Vercel taught me how seamless modern web hosting can be—hooking up the repository so that every git push automatically triggered a new production build was a revelation. It closed the loop on the project, teaching me how to market and present a piece of software once the actual code is finished.
+
+## VI. The Takeaway
+
+Interva might just be a timer, but the infrastructure behind it is industry standard. It taught me how to take a codebase, package it into a desktop application, automate its deployment pipeline, build a web presence for it, and manage it as an open-source project.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery cols={2} images={[
+  { src: '/projects-blog/interva/interva.webp', alt: 'Interva main timer' },
+  { src: '/projects-blog/interva/intervasettings.webp', alt: 'Interva settings' },
+  { src: '/projects-blog/interva/intervathemes.webp', alt: 'Interva themes' }
+]} />

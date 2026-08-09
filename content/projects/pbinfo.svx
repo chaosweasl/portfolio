@@ -1,0 +1,37 @@
+~~~
+title = "pbinfo — Competitive Programming"
+description = "Solved 1000+ algorithmic problems on the pbinfo.ro platform, reaching top 100 in my city. A multi-year grind through data structures, dynamic programming, and graph algorithms."
+date = "2025-09-01"
+published = true
+featured = true
+tags = ["cpp", "algorithms", "data-structures", "competitive-programming", "problem-solving"]
+links = [
+  { text = "pbinfo.ro", url = "https://www.pbinfo.ro", icon = "external" },
+]
+~~~
+
+# pbinfo — Competitive Programming
+
+1000+ problems solved. Top 100 in my city.
+
+## What It Is
+
+[pbinfo.ro](https://www.pbinfo.ro) is Romania's largest competitive programming platform. It's where thousands of students grind algorithms, data structures, and problem-solving skills — from basic loops to advanced graph theory.
+
+## The Grind
+
+Over several years, I solved over 1000 problems spanning:
+
+- **Data Structures**: Arrays, matrices, stacks, queues, heaps, hash maps, segment trees
+- **Algorithms**: Sorting, searching, greedy, divide & conquer, backtracking, binary search
+- **Dynamic Programming**: Knapsack, LIS, LCS, matrix chain, state DP
+- **Graph Theory**: BFS, DFS, Dijkstra, Floyd-Warshall, topological sort, MST
+- **Mathematics**: Number theory, combinatorics, modular arithmetic, prime sieves
+
+## What I Learned
+
+Competitive programming teaches you to think in edge cases. Your solution either passes all test cases in under a second, or it doesn't. There's no "mostly works." That mindset — obsessing over correctness and efficiency — carries into every other project I build.
+
+Reaching top 100 in my city wasn't about being a genius. It was about consistency: showing up, failing, debugging, and trying again until the green "Accepted" finally appeared.
+
+*[View my pbinfo profile](https://www.pbinfo.ro/profil/serban17)*

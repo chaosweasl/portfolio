@@ -1,0 +1,48 @@
+~~~
+title = "Indie Horror Game"
+description = "An immersive, cooperative indie horror game built in Roblox Studio. Features secure client-server architecture, custom animation workflows, and atmospheric world-building."
+date = "2025-06-01"
+published = true
+featured = true
+tags = ["roblox-studio", "lua", "game-dev", "horror", "client-server", "moon-animator"]
+links = [
+  { text = "Dev Blog", url = "/blogs/from-plastic-blocks-to-architecture", icon = "docs" },
+]
+~~~
+
+# Indie Horror Game (Roblox Studio)
+
+A cooperative indie horror game built alongside a friend — blending technical game architecture with creative world-building.
+
+## What It's About
+
+Inspired by games like _The Joy of Creation_, this project is an atmospheric horror experience where two players navigate a tense, narrative-driven environment. My co-dev handles animations and lore while I manage the technical backbone: building, lighting, scripting, and gameplay systems.
+
+## Technical Highlights
+
+- **Client-Server Architecture**: Secure validation of player actions on the server while keeping animations smooth on the client — the golden rule of multiplayer: never trust the client
+- **Motor6D Animation Binding**: Solved the nightmare of syncing animated props (like chairs) with live player rigs by welding character joints server-side during animation triggers
+- **CollectionService Tagging**: Organized hundreds of workspace objects with semantic tags instead of hard-coded paths for maintainable, scalable code
+- **Moon Animator**: Wrestled custom animation timelines and rig interactions, learning the quirks of Roblox's animation ecosystem
+
+## What I Learned
+
+Game dev is the ultimate intersection of all my creative hobbies. The visual composition from photography feeds into lighting design. The logic from web dev translates directly into Lua scripting. And collaborating with a non-technical partner taught me how to translate technical limitations into creative compromises — a skill that applies far beyond game development.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery cols={3} images={[
+  { src: '/projects-blog/horror-game/screenshot-01.webp', alt: 'Horror game screenshot 1' },
+  { src: '/projects-blog/horror-game/screenshot-02.webp', alt: 'Horror game screenshot 2' },
+  { src: '/projects-blog/horror-game/screenshot-03.webp', alt: 'Horror game screenshot 3' },
+  { src: '/projects-blog/horror-game/screenshot-04.webp', alt: 'Horror game screenshot 4' },
+  { src: '/projects-blog/horror-game/screenshot-05.webp', alt: 'Horror game screenshot 5' },
+  { src: '/projects-blog/horror-game/screenshot-06.webp', alt: 'Horror game screenshot 6' },
+  { src: '/projects-blog/horror-game/screenshot-07.webp', alt: 'Horror game screenshot 7' },
+  { src: '/projects-blog/horror-game/screenshot-08.webp', alt: 'Horror game screenshot 8' },
+  { src: '/projects-blog/horror-game/screenshot-09.webp', alt: 'Horror game screenshot 9' }
+]} />

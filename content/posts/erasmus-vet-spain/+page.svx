@@ -1,0 +1,57 @@
+~~~
+title = { text = "How I Became a Robotics Teacher in a Burnt-Down Building in Spain" }
+description = "A two-week robotics program in Spain that turned into a masterclass in impromptu leadership, cross-lingual debugging, and preventing battery fires."
+published_at = "2026-03-01"
+tags = ["erasmus", "spain", "robotics", "leadership", "teaching", "travel", "hardware"]
+~~~
+
+# ERASMUS VET+: How I Became a Robotics Teacher in a Burnt-Down Building in Spain
+
+**Hardware, Leadership, and Surviving Project-Based Learning**
+
+I truly think this Erasmus VET+ project was one of the most significant turning points in my life. It pulled me out of my comfort zone in the best way imaginable. Going to Spain for two weeks gave me this incredible, eye-opening sense of independence. I didn't even plan on making friends, but I was just so naturally social that it happened effortlessly. I made lifelong friends there, and for the rest of the people that I met there, we still say hi to eachother.
+
+But as amazing as the experience was, the actual logistics of the trip were absolute chaos. And that chaos is exactly what made it such a great learning experience.
+
+## I. The Environment (Mold, Fire, and "Fix it")
+
+We stayed at a hotel right by the beach. The food wasn't exactly Michelin-star, and we had a patch of mold in our shower that we just treated like a third roommate who never paid his rent on time. Plus, every time someone took a shower, the water would actively seep into our bedrooms.
+
+When we actually got to the building where we were supposed to be studying robotics, the entire second floor was burnt to a charcoal crisp for reasons that were never fully explained to us.
+
+To top it all off, the instructor who was supposed to be teaching us the curriculum barely spoke a drop of English. When I would run into a hardware issue and ask him _how_ to solve it, his only response was something along the lines of, "Uhhh.... yes, I understan... Fix it."
+
+## II. Impromptu Leadership & Project Management
+
+Because of the language barrier, the program unintentionally morphed into a purely project-based learning environment. There was no direct instruction; it was just us and the hardware.
+
+Thankfully, out of my entire group, I was the most prepared. Because I had taken the time to study microcontrollers and basic robotics at home before the trip, I actually understood the logic we needed to apply. My groupmates, however, were total beginners.
+
+Instead of just doing the work myself, I naturally fell into the role of the teacher. This ended up being a massive crash course in project management:
+
+- **Task Delegation:** I learned how to efficiently split tasks based on each teammate's specific capabilities.
+- **Technical Translation:** I had to figure out how to explain complex hardware logic to people who had never touched a breadboard before.
+- **Risk Management:** I had to keep a close eye on the physical workspace (especially after one of my friends almost lit a battery on fire).
+
+## III. The Result
+
+Because we optimized our workflow and split tasks efficiently, we were actually the very first group to finish the final project. And more importantly, we had a ridiculous amount of fun doing it.
+
+## IV. The Takeaway
+
+When we weren't dodging water leaks or preventing electrical fires, we got to travel. We explored so many different places in Nerja, and we even took a trip to Gibraltar where I literally had wild monkeys climbing on me.
+
+This trip was unlike anything else I've experienced. It taught me that I can handle myself in completely foreign environments, that I actually enjoy leading and teaching a team, and that sometimes, the best way to learn how to build a system is when someone just looks at you and says, "Fix it."
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery cols={2} images={[
+  { src: '/projects-blog/erasmus/20250404_120630.webp', alt: 'Erasmus robotics workshop' },
+  { src: '/projects-blog/erasmus/20250404_121619.webp', alt: 'Erasmus group working on hardware' },
+  { src: '/projects-blog/erasmus/IMG-20250413-WA0216.webp', alt: 'Erasmus trip group photo' },
+  { src: '/projects-blog/erasmus/IMG-20250617-WA0001.webp', alt: 'Erasmus certificate ceremony' }
+]} />

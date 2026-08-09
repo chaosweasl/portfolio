@@ -1,0 +1,48 @@
+~~~
+title = { text = "Why Winning a Hackathon Doesn't Actually Matter" }
+description = "Entering a hackathon with two semi-technical friends, shifting from 'try-hard mode' to 'teaching mode,' and learning that the real win is the chaos you survive together."
+published_at = "2026-02-14"
+tags = ["hackathon", "teamwork", "mentoring", "web-dev", "soft-skills"]
+~~~
+
+# UrbanPulse: Why Winning a Hackathon Doesn't Actually Matter
+
+**Teamwork, Mentoring, and Hacking for the Vibes**
+
+If you look at the rest of my portfolio, you'll see projects where I stress over client-server architecture, database security, and anti-bot evasion. This project is the exact opposite of that.
+
+Recently, I participated in a hackathon (repo: chaosweasl/urbanpulse-hackathon) with two of my friends. They are what you would call "semi-technical." They know their way around a computer, but they aren't exactly going to be spinning up Docker containers or writing complex backend logic anytime soon.
+
+Here is what happens when you enter a competitive coding event with a team that just wants to have fun.
+
+## I. Shifting the Goalposts
+
+When we first started, I had a choice: I could either go full try-hard, lock myself in a dark room, write 100% of the code myself, and ignore my friends just to try and win... or we could actually work as a team.
+
+I chose the latter. I immediately realized that this weekend wasn't going to be about pushing my technical boundaries. It was going to be about teaching.
+
+## II. The "Erasmus" Flashbacks
+
+This experience felt incredibly similar to my Erasmus VET+ project in Spain, where I ended up having to teach my beginner groupmates how robotics worked.
+
+During this hackathon, I had to figure out how to split our tasks so my friends could actively contribute without getting completely overwhelmed by the codebase. I spent more time explaining how certain web components work and debugging their CSS than I did writing my own logic. It was a massive exercise in communication. You don't really know if you understand a concept until you are forced to explain it to someone who has no idea what you are talking about.
+
+## III. The Code is Secondary
+
+If a recruiter looks at the GitHub repository for UrbanPulse, they aren't going to find a revolutionary piece of software. The programming experience I gained from this event was virtually zero.
+
+But the _project management_ experience was huge. Learning how to keep team morale high when things break, how to delegate simple tasks effectively, and how to maintain patience when a teammate accidentally deletes a div and breaks the entire layout—those are real skills.
+
+## IV. The Takeaway
+
+We didn't build the next big tech startup, but we had a ridiculous amount of fun. It reminded me that while coding is a great tool for solving serious problems, it is also just a really fun sandbox to play in with your friends. Sometimes, a side quest is exactly what you need to avoid burnout.
+
+## Gallery
+
+<script>
+  import Gallery from '$components/Gallery.svelte';
+</script>
+
+<Gallery images={[
+  { src: '/projects-blog/urbanpulse/urbanpulse.webp', alt: 'UrbanPulse hackathon project' }
+]} />
