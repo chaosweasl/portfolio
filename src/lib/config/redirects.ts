@@ -10,7 +10,6 @@ const redirects = createRedirects([
 	{ paths: ['/insta', '/ig'], url: Site.out.instagram },
 	{ paths: ['/email', '/mail'], url: `mailto:${Site.out.email}` },
 	{ paths: '/repo', url: Site.repo.url },
-	{ paths: '/resume', url: '/resume.pdf' },
 	{ paths: '/interva', url: 'https://github.com/chaosweasl/interva' }
 ]);
 

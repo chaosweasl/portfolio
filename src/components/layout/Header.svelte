@@ -28,14 +28,6 @@
 				{item.title}
 			</a>
 		{/each}
-		<a
-			href="/resume.pdf"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="text-text hover:text-accent rounded px-3 py-2 text-sm font-medium transition-colors duration-150"
-		>
-			Resume
-		</a>
 	</nav>
 </div>
 
