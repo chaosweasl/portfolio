@@ -69,7 +69,7 @@ const Site: Site = {
 	out: {
 		github: 'https://github.com/chaosweasl',
 		email: '17daniel.dev@gmail.com',
-		instagram: 'https://www.instagram.com/virtuesfound/'
+		instagram: 'https://www.instagram.com/chaosweasl/'
 	},
 	repo: {
 		url: 'https://github.com/chaosweasl/portfolio',
