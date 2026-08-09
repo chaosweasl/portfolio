@@ -44,8 +44,8 @@
 			<a class="link" href="https://www.pbinfo.ro" target="_blank" rel="noopener"
 				>1000+ competitive programming problems</a
 			>
-			on pbinfo (top 100 in my city), or making unhinged creature noises in voice calls. I dabble in cybersecurity,
-			digital art, robotics, and photography. Code is just one of many tools I use to bring ideas to life.
+			on pbinfo (top 100 in my city). I dabble in cybersecurity, digital art, robotics, and photography.
+			Code is just one of many tools I use to bring ideas to life.
 		</p>
 		<div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
 			{#each Home.socialLinks as link (link.href)}
