@@ -15,15 +15,6 @@ export function jsonLd(data: JsonLd): string {
 }
 
 export function baseJsonLd(pathname: string): Graph {
-	const searchAction = {
-		'@type': 'SearchAction',
-		target: {
-			'@type': 'EntryPoint',
-			urlTemplate: `${Site.url}/search?q={search_term_string}`
-		},
-		'query-input': 'required name=search_term_string'
-	} as const;
-
 	const graph: Array<WebSite | Person | ProfilePage> = [
 		{
 			'@type': 'WebSite',
@@ -32,8 +23,7 @@ export function baseJsonLd(pathname: string): Graph {
 			name: Site.name,
 			description: Site.description,
 			inLanguage: 'en-NL',
-			publisher: { '@id': personId },
-			potentialAction: searchAction as WebSite['potentialAction']
+			publisher: { '@id': personId }
 		},
 		{
 			'@type': 'Person',
