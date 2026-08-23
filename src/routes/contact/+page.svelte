@@ -29,8 +29,8 @@
 </script>
 
 <svelte:head>
-	<title>Contact | Daniel Iacob</title>
-	<meta name="description" content="Get in touch with Daniel Iacob." />
+	<title>Contact | Serban-Daniel Iacob</title>
+	<meta name="description" content="Get in touch with Serban-Daniel Iacob." />
 </svelte:head>
 
 <div class="mx-auto max-w-2xl space-y-8 px-4 py-8 md:py-12">

@@ -4,10 +4,10 @@
 </script>
 
 <svelte:head>
-	<title>Connect with Daniel Iacob | Social Links</title>
+	<title>Connect with Serban-Daniel Iacob | Social Links</title>
 	<meta
 		name="description"
-		content="Connect with Daniel Iacob (weasl) on various platforms - GitHub, LinkedIn, Instagram, and Email."
+		content="Connect with Serban-Daniel Iacob (weasl) on various platforms - GitHub, LinkedIn, Instagram, and Email."
 	/>
 </svelte:head>
 

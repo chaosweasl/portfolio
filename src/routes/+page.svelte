@@ -34,11 +34,11 @@
 	<!-- Section 1: Hero / Introduction — mxb-inspired -->
 	<section class="space-y-5 px-4 md:px-0">
 		<p class="text-subtext0 text-base">
-			<a href="/about" class="link">hey, I'm Serban-Daniel Iacob — but call me Daniel (or weasl)!</a
+			<a href="/about" class="link">hey, I'm Serban-Daniel Iacob — but call me Serban (chaosweasl)!</a
 			>
 		</p>
 		<h1 class="text-4xl font-bold md:text-5xl">
-			<span class="sr-only">Serban-Daniel Iacob (Daniel Iacob / chaosweasl / weasl) — </span>i like
+			<span class="sr-only">Serban-Daniel Iacob (Serban / chaosweasl / weasl) — </span>i like
 			to create things
 		</h1>
 		<p class="text-subtext0 max-w-prose text-lg leading-relaxed">

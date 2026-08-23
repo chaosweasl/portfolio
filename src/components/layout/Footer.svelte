@@ -58,7 +58,7 @@
 	class="bg-crust text-subtext0 border-surface0/20 mx-5 mb-5 flex h-auto flex-col items-center justify-center gap-y-3 rounded-lg border p-5 text-sm md:flex-row md:justify-between md:gap-y-0"
 >
 	<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 md:justify-start">
-		<span class="whitespace-nowrap">&copy; {year} Daniel Iacob</span>
+		<span class="whitespace-nowrap">&copy; {year} Serban-Daniel Iacob</span>
 	</div>
 
 	<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 md:justify-end">

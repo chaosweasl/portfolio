@@ -31,7 +31,7 @@ export function baseJsonLd(pathname: string): Graph {
 			name: Site.seo.author,
 			givenName: 'Serban-Daniel',
 			familyName: 'Iacob',
-			alternateName: ['Daniel Iacob', 'Serban Daniel', 'chaosweasl', 'weasl'],
+			alternateName: ['Serban', 'Serban-Daniel Iacob', 'chaosweasl', 'weasl'],
 			url: Site.url,
 			image: siteUrl('/images/avatar.webp'),
 			description:

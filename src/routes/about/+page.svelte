@@ -20,7 +20,7 @@
 	const aboutImages = [
 		{
 			id: 'avatar',
-			alt: 'Daniel Iacob',
+			alt: 'Serban-Daniel Iacob',
 			hash: '',
 			originalWidth: 0,
 			originalHeight: 0,
@@ -126,7 +126,7 @@
 </script>
 
 <svelte:head>
-	<title>About Me | Daniel Iacob</title>
+	<title>About Me | Serban-Daniel Iacob</title>
 </svelte:head>
 
 {#snippet ExternalLink(href: str, text: str)}
@@ -153,11 +153,11 @@
 					type="button"
 					class="h-full w-full cursor-pointer overflow-hidden rounded-md border-none bg-transparent p-0"
 					onclick={() => openLightbox(0)}
-					aria-label="View larger: Daniel Iacob"
+					aria-label="View larger: Serban-Daniel Iacob"
 				>
 					<img
 						src="/images/avatar.webp"
-						alt="Daniel Iacob"
+						alt="Serban-Daniel Iacob"
 						class="h-full w-full rounded-md object-cover shadow-lg transition-transform duration-300 hover:scale-[1.02]"
 					/>
 				</button>
@@ -165,7 +165,7 @@
 
 			<div class="space-y-4 md:col-span-2">
 				<p class="text-subtext0 text-base leading-relaxed">
-					<b>Hey!</b> I'm Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a software
+					<b>Hey!</b> I'm Serban-Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a software
 					developer and Business & IT student currently based in Enschede, NL. I
 					<a href="/projects" class="link">build things</a>
 					when I'm bored, which is basically all the time.

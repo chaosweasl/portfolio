@@ -15,7 +15,9 @@
 	const { data, children } = $props();
 
 	let title = $derived(
-		[Site.name, ...page.url.pathname.split('/').slice(1)].filter(Boolean).join(' - ')
+		page.url.pathname === '/'
+			? 'chaosweasl — Serban-Daniel Iacob, Software Developer & Game Creator'
+			: [Site.name, ...page.url.pathname.split('/').slice(1)].filter(Boolean).join(' — ')
 	);
 
 	let isSidebarOpen = $state(false);

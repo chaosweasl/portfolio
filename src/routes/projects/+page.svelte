@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="A collection of projects by Daniel Iacob (weasl)." />
+	<meta name="description" content="A collection of projects by Serban-Daniel Iacob (weasl)." />
 </svelte:head>
 
 <div class="space-y-8">

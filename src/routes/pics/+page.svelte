@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Pics | Daniel Iacob</title>
+	<title>Pics | Serban-Daniel Iacob</title>
 	<meta name="description" content="A collection of my photography." />
 </svelte:head>
 

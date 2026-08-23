@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025. Daniel Iacob
+ * Copyright (c) 2025. Serban-Daniel Iacob
  * All Rights Reserved
  */
 import Site from '$lib/config/common';
