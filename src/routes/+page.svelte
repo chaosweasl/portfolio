@@ -42,8 +42,9 @@
 			to create things
 		</h1>
 		<p class="text-subtext0 max-w-prose text-lg leading-relaxed">
-			I'm Serban-Daniel Iacob — a software developer and Business & IT student who lives for
-			creation — whether that's
+			I'm Serban-Daniel Iacob — a software engineer and full-stack developer
+			<b>available for hire</b>, and a Business & IT student at the University of Twente (UTwente)
+			who lives for creation — whether that's
 			<a class="link" href="/projects">building apps</a>, developing indie horror games in Roblox
 			Studio, solving
 			<a class="link" href="https://www.pbinfo.ro" target="_blank" rel="noopener"

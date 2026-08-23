@@ -32,7 +32,7 @@ const Site: Site = {
 	name: 'Serban-Daniel Iacob',
 	url: dev ? 'http://localhost:5173' : 'https://chaosweasl.com',
 	description:
-		'Serban-Daniel Iacob (chaosweasl / weasl) — software developer, game creator, and Business & IT student. Building apps, indie horror games, and creative tools with TypeScript, React, Python, and Roblox Studio.',
+		'Serban-Daniel Iacob (chaosweasl / weasl) — software engineer & full-stack developer available for hire. Business & IT student at the University of Twente (UTwente), Enschede, NL. Erasmus+ alumni.',
 	tags: [
 		'Serban-Daniel Iacob',
 		'Serban',
@@ -40,6 +40,8 @@ const Site: Site = {
 		'chaosweasl',
 		'weasl',
 		'Software Developer',
+		'Software Engineer',
+		'Available for Hire',
 		'Game Developer',
 		'TypeScript',
 		'React',
@@ -53,14 +55,38 @@ const Site: Site = {
 		'Open Source',
 		'Student Developer',
 		'Enschede',
-		'Netherlands'
+		'Netherlands',
+		'University of Twente',
+		'UTwente',
+		'Erasmus+',
+		'Competitive Programming',
+		'Robotics',
+		'Arduino',
+		'C++',
+		'Tauri',
+		'Docker',
+		'Playwright',
+		'Web Scraping',
+		'Hackathons',
+		'Photography',
+		'Voice Acting',
+		'Digital Art',
+		'Game Development',
+		'Rust',
+		'Tailwind CSS',
+		'Supabase',
+		'Hardware',
+		'Microcontrollers',
+		'Teaching',
+		'Leadership',
+		'Freelance'
 	],
 	seo: {
 		author: 'Serban-Daniel Iacob',
 		birthDate: '2007-07-17',
 		worksFor: {
-			name: 'Student (Business & IT)',
-			url: 'https://chaosweasl.com'
+			name: 'University of Twente (Business & IT)',
+			url: 'https://www.utwente.nl/en'
 		},
 		location: {
 			city: 'Enschede',

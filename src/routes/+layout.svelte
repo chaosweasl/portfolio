@@ -16,7 +16,7 @@
 
 	let title = $derived(
 		page.url.pathname === '/'
-			? 'chaosweasl — Serban-Daniel Iacob, Software Developer & Game Creator'
+			? 'chaosweasl — Serban-Daniel Iacob, Software Engineer & Full-Stack Developer'
 			: [Site.name, ...page.url.pathname.split('/').slice(1)].filter(Boolean).join(' — ')
 	);
 

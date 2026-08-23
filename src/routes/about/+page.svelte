@@ -127,6 +127,10 @@
 
 <svelte:head>
 	<title>About Me | Serban-Daniel Iacob</title>
+	<meta
+		name="description"
+		content="Serban-Daniel Iacob (weasl) — software engineer and full-stack developer available for hire. Business and IT student at the University of Twente (UTwente), Enschede. Erasmus+ robotics program participant."
+	/>
 </svelte:head>
 
 {#snippet ExternalLink(href: str, text: str)}
@@ -166,7 +170,13 @@
 			<div class="space-y-4 md:col-span-2">
 				<p class="text-subtext0 text-base leading-relaxed">
 					<b>Hey!</b> I'm Serban-Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a software
-					developer and Business & IT student currently based in Enschede, NL. I
+					engineer and full-stack developer <b>available for hire</b>, based in Enschede, NL. I study
+					Business & IT at the
+					<a class="link" href="https://www.utwente.nl/en" target="_blank" rel="noopener noreferrer"
+						>University of Twente (UTwente)</a
+					>
+					and took part in an
+					<a class="link" href="/blogs/erasmus-vet-spain">Erasmus+ robotics program</a> in Spain. I
 					<a href="/projects" class="link">build things</a>
 					when I'm bored, which is basically all the time.
 				</p>
@@ -250,10 +260,14 @@
 					<li>Full-stack developer who loves creating new things</li>
 					<li>Game developer in Roblox Studio (for now)</li>
 					<li>Web scraping & automation with Playwright and Python</li>
+					<li>Competitive programmer (1000+ problems on pbinfo)</li>
+					<li>Hackathons & team mentoring</li>
 				</ul>
 				<ul class="text-subtext0 list-disc space-y-2 pl-5 text-base leading-relaxed">
+					<li>Desktop apps with Tauri & React</li>
 					<li>Digital illustration & Art</li>
 					<li>Robotics & hardware programming</li>
+					<li>Voice acting & character impressions</li>
 					<li>Photography and chasing aesthetics</li>
 				</ul>
 			</div>

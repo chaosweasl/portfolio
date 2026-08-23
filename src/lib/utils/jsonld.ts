@@ -1,6 +1,14 @@
 import Site from '$lib/config/common';
 import type { PostPageData } from '$lib/content/posts';
-import type { BlogPosting, Graph, Person, ProfilePage, WebSite, WithContext } from 'schema-dts';
+import type {
+	BlogPosting,
+	CollegeOrUniversity,
+	Graph,
+	Person,
+	ProfilePage,
+	WebSite,
+	WithContext
+} from 'schema-dts';
 
 const siteId = `${Site.url}/#website`;
 const personId = `${Site.url}/#person`;
@@ -35,11 +43,11 @@ export function baseJsonLd(pathname: string): Graph {
 			url: Site.url,
 			image: siteUrl('/images/avatar.webp'),
 			description:
-				'Software developer, game creator, and Business & IT student based in Enschede, Netherlands. Building apps, indie horror games, and creative tools.',
+				'Software engineer and full-stack developer available for hire, based in Enschede, Netherlands. Business & IT student at the University of Twente (UTwente) and Erasmus+ alumni.',
 			jobTitle: 'Software Developer',
 			birthDate: Site.seo.birthDate,
 			worksFor: {
-				'@type': 'Organization',
+				'@type': 'CollegeOrUniversity',
 				name: Site.seo.worksFor.name,
 				url: Site.seo.worksFor.url
 			},
@@ -52,17 +60,39 @@ export function baseJsonLd(pathname: string): Graph {
 			sameAs: [Site.out.github, Site.out.instagram],
 			knowsAbout: [
 				'Software Engineering',
+				'Full-Stack Web Development',
 				'Web Development',
 				'Game Development',
+				'Indie Game Development',
 				'Cybersecurity',
+				'Competitive Programming',
+				'Web Scraping',
+				'Robotics',
+				'Hardware',
 				'TypeScript',
-				'Python',
+				'JavaScript',
 				'React',
 				'Next.js',
+				'Tauri',
+				'Rust',
+				'Python',
+				'C++',
 				'Lua',
 				'Roblox Studio',
-				'Competitive Programming',
-				'Robotics'
+				'Docker',
+				'SQLite',
+				'Supabase',
+				'Arduino',
+				'Microcontrollers',
+				'AI',
+				'Photography',
+				'Digital Art',
+				'Voice Acting',
+				'Hackathons',
+				'Teaching',
+				'Leadership',
+				'Erasmus+',
+				'University of Twente'
 			]
 		}
 	];
