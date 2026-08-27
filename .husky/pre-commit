@@ -1,5 +1,9 @@
 # .husky/pre-commit
 
+# Git hooks run with a restricted PATH on Windows, so make sure bun is
+# resolvable from its default install location before running anything.
+command -v bun >/dev/null 2>&1 || export PATH="$HOME/.bun/bin:$PATH"
+
 # Sanitize EXIF (fuzz GPS to city-level precision) on staged JPEGs
 bun run scripts/sanitize-exif.ts --staged
 

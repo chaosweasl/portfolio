@@ -44,7 +44,7 @@ export const experienceTimeline: ExperienceTimelineItem[] = [
 		company: 'KamerCatch',
 		role: 'Creator & Full-Stack Developer',
 		url: 'https://github.com/chaosweasl/KamerCatch',
-		logoUrl: '/logos/kamercatch.svg',
+		logoUrl: '/logos/kamercatch.jpg',
 		logoAlt: 'KamerCatch Logo',
 		startDate: '2025-04-01',
 		details:

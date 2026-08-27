@@ -55,7 +55,7 @@
 			<img
 				src={data.metadata.image.url}
 				alt={data.metadata.image.alt}
-				class="aspect-video rounded-lg md:rounded-xl"
+				class="aspect-video w-full rounded-lg object-cover md:rounded-xl"
 				style:view-transition-name="project-img-{data.slug}"
 			/>
 		</div>
@@ -63,6 +63,13 @@
 
 	<!-- Header Section -->
 	<header class="mb-8 space-y-4">
+		{#if data.metadata.logo}
+			<img
+				src={data.metadata.logo.url}
+				alt={data.metadata.logo.alt || data.metadata.title}
+				class="h-14 w-auto object-contain"
+			/>
+		{/if}
 		<h1
 			class="text-3xl font-bold md:text-4xl"
 			style:view-transition-name="project-title-{data.slug}"

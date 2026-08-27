@@ -5,6 +5,8 @@ date = "2026-01-15"
 published = true
 featured = true
 tags = ["typescript", "playwright", "nextjs", "docker", "sqlite", "python", "web-scraping"]
+image = { url = "/logos/kamercatch-wide.jpg", alt = "KamerCatch logo" }
+logo = { url = "/logos/kamercatch.jpg", alt = "KamerCatch logo" }
 links = [
   { text = "GitHub", url = "https://github.com/chaosweasl/KamerCatch", icon = "github" },
 ]

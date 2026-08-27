@@ -33,7 +33,7 @@
 						<img
 							src={project.metadata.image.url}
 							alt={project.metadata.image.alt}
-							class="mb-4 aspect-video w-full rounded-md"
+							class="mb-4 aspect-video w-full rounded-md object-cover"
 							style:view-transition-name="project-img-{project.slug}"
 						/>
 					{:else}
