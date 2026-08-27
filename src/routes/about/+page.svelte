@@ -186,7 +186,7 @@
 						'Interva',
 						'https://github.com/chaosweasl/interva'
 					)}, an open-source Pomodoro timer built with Tauri & React, and
-					{@render GithubProject('Room Scraper', '/projects/room-scraper')}, a housing radar that
+					{@render GithubProject('KamerCatch', '/projects/kamercatch')}, a housing radar that
 					saved me from the brutal Dutch rental market. I also spend a lot of time in Roblox Studio
 					building an indie horror game with a friend.
 				</p>

@@ -11,14 +11,14 @@
 
 	const taglines: Record<string, string> = {
 		interva: 'A simple Pomodoro Timer that taught me CI/CD',
-		'room-scraper': 'Multi-source housing scraper for the Dutch market',
+		'kamercatch': 'Multi-source housing scraper for the Dutch market',
 		urbanpulse: 'A weekend hackathon — more chaos than code',
 		'horror-game': 'Co-op horror built in Roblox Studio',
 		pbinfo: '1000+ algorithmic problems solved',
 		'blank-canvas-beginner-art': 'From stick figures to digital art',
 		'building-cognify': 'AI-powered study tool built from scratch',
 		'building-interva': 'How a simple timer taught me DevOps',
-		'building-room-scraper': 'Engineering a housing radar to survive the Netherlands',
+		'building-kamercatch': 'Engineering a housing radar to survive the Netherlands',
 		'color-side-quest-photography': 'Photography as a creative side quest',
 		'erasmus-vet-spain': 'Teaching robotics in a burnt-down building in Spain',
 		'from-plastic-blocks-to-architecture': 'From Roblox blocks to game architecture',

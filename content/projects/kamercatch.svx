@@ -1,22 +1,22 @@
 ~~~
-title = "Room Scraper"
+title = "KamerCatch"
 description = "A multi-source housing scraper that monitors Dutch rental platforms, centralizes listings into a SQLite database, and provides real-time Discord alerts."
 date = "2026-01-15"
 published = true
 featured = true
 tags = ["typescript", "playwright", "nextjs", "docker", "sqlite", "python", "web-scraping"]
 links = [
-  { text = "GitHub", url = "https://github.com/chaosweasl/room-scraper", icon = "github" },
+  { text = "GitHub", url = "https://github.com/chaosweasl/KamerCatch", icon = "github" },
 ]
 ~~~
 
-# Room Scraper
+# KamerCatch
 
 When finding student housing in the Netherlands became a full-time job, I automated the entire hunt.
 
 ## What It Does
 
-Room Scraper runs multiple Playwright-based scrapers every 15 minutes across Dutch rental platforms (Roomspot, Marktplaats, Pararius, Xior, Kamernet), centralizes listings into SQLite, and fires Discord webhook alerts when new affordable rooms appear. A Python script generates personalized email drafts for rapid landlord outreach.
+KamerCatch runs multiple Playwright-based scrapers every 15 minutes across Dutch rental platforms (Roomspot, Marktplaats, Pararius, Xior, Kamernet), centralizes listings into SQLite, and fires Discord webhook alerts when new affordable rooms appear. A Python script generates personalized email drafts for rapid landlord outreach.
 
 ## Technical Highlights
 
@@ -37,5 +37,5 @@ This project was a masterclass in tying together disparate technologies into a c
 </script>
 
 <Gallery images={[
-  { src: '/projects-blog/room-scraper/room-scraper-architecture.webp', alt: 'Room Scraper architecture overview' }
+  { src: '/projects-blog/kamercatch/kamercatch-architecture.webp', alt: 'KamerCatch architecture overview' }
 ]} />

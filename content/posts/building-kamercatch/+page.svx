@@ -5,7 +5,7 @@ published_at = "2026-04-10"
 tags = ["typescript", "playwright", "nextjs", "docker", "sqlite", "web-scraping", "ai-agents"]
 ~~~
 
-# Building Room Scraper: Engineering a Housing Radar to Survive the Dutch Rental Market
+# Building KamerCatch: Engineering a Housing Radar to Survive the Dutch Rental Market
 
 **TypeScript, Playwright, Next.js, Docker, SQLite, and AI Agents**
 
@@ -44,7 +44,7 @@ I used Hermes to help me write the boilerplate code for the scrapers, debug Dock
 
 ## IV. The Takeaway & Future Plans
 
-Room Scraper started as a desperate survival tool to secure my university housing, but it ended up being one of the most practically useful things I've ever coded. It forced me to tie together web scraping, containerization, database architecture, frontend dashboards, and cutting-edge AI agent workflows into a single, cohesive system.
+KamerCatch started as a desperate survival tool to secure my university housing, but it ended up being one of the most practically useful things I've ever coded. It forced me to tie together web scraping, containerization, database architecture, frontend dashboards, and cutting-edge AI agent workflows into a single, cohesive system.
 
 It's rough around the edges right now, but I hope to one day come back to this codebase, refactor it until it shines, and actually deploy it as a polished public utility (I'm looking at you, Pararius...) for other desperate students trying to find a place to live.
 
@@ -55,5 +55,5 @@ It's rough around the edges right now, but I hope to one day come back to this c
 </script>
 
 <Gallery images={[
-  { src: '/projects-blog/room-scraper/room-scraper-architecture.webp', alt: 'Room Scraper architecture' }
+  { src: '/projects-blog/kamercatch/kamercatch-architecture.webp', alt: 'KamerCatch architecture' }
 ]} />

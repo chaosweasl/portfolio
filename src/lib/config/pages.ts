@@ -41,11 +41,11 @@ export const experienceTimeline: ExperienceTimelineItem[] = [
 		logoScale: 1.0
 	},
 	{
-		company: 'Room Scraper',
+		company: 'KamerCatch',
 		role: 'Creator & Full-Stack Developer',
-		url: 'https://github.com/chaosweasl/room-scraper',
-		logoUrl: '/logos/room-scraper.svg',
-		logoAlt: 'Room Scraper Logo',
+		url: 'https://github.com/chaosweasl/KamerCatch',
+		logoUrl: '/logos/kamercatch.svg',
+		logoAlt: 'KamerCatch Logo',
 		startDate: '2025-04-01',
 		details:
 			'Built a multi-source housing scraper monitoring Dutch rental platforms with Playwright stealth scraping, SQLite, Next.js dashboard, and AI-powered email automation.'
