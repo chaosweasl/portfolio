@@ -34,24 +34,22 @@
 	<!-- Section 1: Hero / Introduction — mxb-inspired -->
 	<section class="space-y-5 px-4 md:px-0">
 		<p class="text-subtext0 text-base">
-			<a href="/about" class="link">hey, I'm Serban-Daniel Iacob — but call me Serban (chaosweasl)!</a
-			>
+			<a href="/about" class="link">hey, I'm Serban-Daniel Iacob — but call me Serban!</a>
 		</p>
 		<h1 class="text-4xl font-bold md:text-5xl">
-			<span class="sr-only">Serban-Daniel Iacob (Serban / chaosweasl / weasl) — </span>i like
-			to create things
+			<span class="sr-only">Serban-Daniel Iacob (Serban / chaosweasl / weasl) — </span>i like to
+			create things
 		</h1>
 		<p class="text-subtext0 max-w-prose text-lg leading-relaxed">
-			I'm Serban-Daniel Iacob — a software engineer and full-stack developer
-			<b>available for hire</b>, and a Business & IT student at the University of Twente (UTwente)
-			who lives for creation — whether that's
-			<a class="link" href="/projects">building apps</a>, developing indie horror games in Roblox
-			Studio, solving
+			I'm Serban-Daniel Iacob — a software engineer
+			<b>available for hire</b>, and a Business & IT student at the University of Twente, who lives
+			for creation — whether that's
+			<a class="link" href="/projects">building apps</a>, developing indie games, solving
 			<a class="link" href="https://www.pbinfo.ro" target="_blank" rel="noopener"
 				>1000+ competitive programming problems</a
 			>
-			on pbinfo (top 100 in my city). I dabble in cybersecurity, robotics, digital art, voice acting,
-			and photography. Code is just one of many tools I use to bring ideas to life.
+			(top 100 in my city). I also dabble in cybersecurity, robotics, art, voice acting, photography and
+			more! Code is just one of many tools I use to bring ideas to life.
 		</p>
 		<div class="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2">
 			{#each Home.socialLinks as link (link.href)}

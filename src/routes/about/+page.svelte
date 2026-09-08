@@ -129,7 +129,7 @@
 	<title>About Me | Serban-Daniel Iacob</title>
 	<meta
 		name="description"
-		content="Serban-Daniel Iacob (weasl) — software engineer and full-stack developer available for hire. Business and IT student at the University of Twente (UTwente), Enschede. Erasmus+ robotics program participant."
+		content="Serban-Daniel Iacob (weasl) — software engineer and full-stack developer available for hire. Business and IT student at the University of Twente, Enschede. Erasmus+ robotics program participant."
 	/>
 </svelte:head>
 
@@ -169,16 +169,12 @@
 
 			<div class="space-y-4 md:col-span-2">
 				<p class="text-subtext0 text-base leading-relaxed">
-					<b>Hey!</b> I'm Serban-Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a software
-					engineer and full-stack developer <b>available for hire</b>, based in Enschede, NL. I study
-					Business & IT at the
+					<b>Hey!</b> I'm Serban-Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a
+					software engineer <b>available for hire</b>, based in Enschede, NL. I study Business & IT
+					at the
 					<a class="link" href="https://www.utwente.nl/en" target="_blank" rel="noopener noreferrer"
-						>University of Twente (UTwente)</a
-					>
-					and took part in an
-					<a class="link" href="/blogs/erasmus-vet-spain">Erasmus+ robotics program</a> in Spain. I
-					<a href="/projects" class="link">build things</a>
-					when I'm bored, which is basically all the time.
+						>University of Twente</a
+					>. I build things when I'm bored, which is basically all the time.
 				</p>
 
 				<p class="text-subtext0 text-base leading-relaxed">
@@ -186,22 +182,21 @@
 						'Interva',
 						'https://github.com/chaosweasl/interva'
 					)}, an open-source Pomodoro timer built with Tauri & React, and
-					{@render GithubProject('KamerCatch', '/projects/kamercatch')}, a housing radar that
-					saved me from the brutal Dutch rental market. I also spend a lot of time in Roblox Studio
-					building an indie horror game with a friend.
+					{@render GithubProject('KamerCatch', '/projects/kamercatch')}, a housing radar that saved
+					me from ending up homeless before I started uni. I also spend a lot of time learning
+					random things that interest me.
 				</p>
 
 				<p class="text-subtext0 text-base leading-relaxed">
 					Beyond the code editor, I'm into
-					<a href="/pics" class="link">photography</a>, digital art on my tablet, amateur voice
-					acting (I can do a lot of good impressions for niche characters like Mort from
-					Madagascar), and getting my hands dirty with robotics and hardware.
+					<a href="/pics" class="link">photography</a>, digital art and getting my hands dirty with
+					robotics and hardware.
 				</p>
 
 				<p class="text-subtext0 text-base leading-relaxed">
 					Feel free to <button onclick={handleEmailClick} class="link cursor-pointer"
 						>shoot me an email</button
-					> if you'd like to chat, collaborate!
+					> if you'd like to chat or collaborate!
 				</p>
 
 				<div class="flex flex-wrap gap-3 pt-2">
@@ -258,13 +253,13 @@
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<ul class="text-subtext0 list-disc space-y-2 pl-5 text-base leading-relaxed">
 					<li>Full-stack developer who loves creating new things</li>
-					<li>Game developer in Roblox Studio (for now)</li>
-					<li>Web scraping & automation with Playwright and Python</li>
+					<li>Indie game developer with friends</li>
+					<li>Web scraping & automation</li>
 					<li>Competitive programmer (1000+ problems on pbinfo)</li>
 					<li>Hackathons & team mentoring</li>
 				</ul>
 				<ul class="text-subtext0 list-disc space-y-2 pl-5 text-base leading-relaxed">
-					<li>Desktop apps with Tauri & React</li>
+					<li>Desktop, Mobile & Web apps</li>
 					<li>Digital illustration & Art</li>
 					<li>Robotics & hardware programming</li>
 					<li>Voice acting & character impressions</li>
