@@ -37,9 +37,8 @@ export function baseJsonLd(pathname: string): Graph {
 			'@type': 'Person',
 			'@id': personId,
 			name: Site.seo.author,
-			givenName: 'Serban-Daniel',
-			familyName: 'Iacob',
-			alternateName: ['Serban', 'Serban-Daniel Iacob', 'chaosweasl', 'weasl'],
+			givenName: 'Serban',
+			alternateName: ['Serban', 'chaosweasl', 'weasl'],
 			url: Site.url,
 			image: siteUrl('/images/avatar.webp'),
 			description:
@@ -103,7 +102,7 @@ export function baseJsonLd(pathname: string): Graph {
 			'@id': `${Site.url}/#webpage`,
 			url: Site.url,
 			isPartOf: { '@id': siteId },
-			name: `Serban-Daniel Iacob — Portfolio & Blog`,
+			name: `Serban — Portfolio & Blog`,
 			description: Site.description,
 			inLanguage: 'en-NL',
 			mainEntity: { '@id': personId }

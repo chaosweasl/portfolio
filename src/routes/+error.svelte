@@ -1,5 +1,5 @@
 <!--
-  - Copyright (c) 2026. Serban-Daniel Iacob
+  - Copyright (c) 2026. Serban
   - All Rights Reserved
   -->
 

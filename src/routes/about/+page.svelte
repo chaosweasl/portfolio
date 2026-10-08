@@ -20,7 +20,7 @@
 	const aboutImages = [
 		{
 			id: 'avatar',
-			alt: 'Serban-Daniel Iacob',
+			alt: 'Serban',
 			hash: '',
 			originalWidth: 0,
 			originalHeight: 0,
@@ -126,10 +126,10 @@
 </script>
 
 <svelte:head>
-	<title>About Me | Serban-Daniel Iacob</title>
+	<title>About Me | Serban</title>
 	<meta
 		name="description"
-		content="Serban-Daniel Iacob (weasl) — software engineer and full-stack developer available for hire. Business and IT student at the University of Twente, Enschede. Erasmus+ robotics program participant."
+		content="Serban (weasl) — software engineer and full-stack developer available for hire. Business and IT student at the University of Twente, Enschede. Erasmus+ robotics program participant."
 	/>
 </svelte:head>
 
@@ -157,11 +157,11 @@
 					type="button"
 					class="h-full w-full cursor-pointer overflow-hidden rounded-md border-none bg-transparent p-0"
 					onclick={() => openLightbox(0)}
-					aria-label="View larger: Serban-Daniel Iacob"
+					aria-label="View larger: Serban"
 				>
 					<img
 						src="/images/avatar.webp"
-						alt="Serban-Daniel Iacob"
+						alt="Serban"
 						class="h-full w-full rounded-md object-cover shadow-lg transition-transform duration-300 hover:scale-[1.02]"
 					/>
 				</button>
@@ -169,7 +169,7 @@
 
 			<div class="space-y-4 md:col-span-2">
 				<p class="text-subtext0 text-base leading-relaxed">
-					<b>Hey!</b> I'm Serban-Daniel Iacob (<a class="link" href="/socials">@weasl</a>) — a
+					<b>Hey!</b> I'm Serban (<a class="link" href="/socials">@weasl</a>) — a
 					software engineer <b>available for hire</b>, based in Enschede, NL. I study Business & IT
 					at the
 					<a class="link" href="https://www.utwente.nl/en" target="_blank" rel="noopener noreferrer"

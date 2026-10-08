@@ -43,7 +43,7 @@ $nameBrush.Dispose()
 # Subtitle
 $fontSub  = New-Object System.Drawing.Font("Segoe UI", 34, [System.Drawing.FontStyle]::Regular)
 $subBrush = New-Object System.Drawing.SolidBrush($text)
-$g.DrawString("Serban-Daniel Iacob - Software Developer", $fontSub, $subBrush, 64, 348)
+$g.DrawString("Serban - Software Developer", $fontSub, $subBrush, 64, 348)
 $fontSub.Dispose()
 $subBrush.Dispose()
 

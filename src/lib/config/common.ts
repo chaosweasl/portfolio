@@ -29,14 +29,12 @@ interface Site {
 }
 
 const Site: Site = {
-	name: 'Serban-Daniel Iacob',
+	name: 'Serban',
 	url: dev ? 'http://localhost:5173' : 'https://chaosweasl.com',
 	description:
-		'Serban-Daniel Iacob (chaosweasl / weasl) — software engineer & full-stack developer available for hire. Business & IT student at the University of Twente (UTwente), Enschede, NL. Erasmus+ alumni.',
+		'Serban (chaosweasl / weasl) — software engineer & full-stack developer available for hire. Business & IT student at the University of Twente (UTwente), Enschede, NL. Erasmus+ alumni.',
 	tags: [
-		'Serban-Daniel Iacob',
 		'Serban',
-		'Serban Iacob',
 		'chaosweasl',
 		'weasl',
 		'Software Developer',
@@ -82,7 +80,7 @@ const Site: Site = {
 		'Freelance'
 	],
 	seo: {
-		author: 'Serban-Daniel Iacob',
+		author: 'Serban',
 		birthDate: '2007-07-17',
 		worksFor: {
 			name: 'University of Twente (Business & IT)',
